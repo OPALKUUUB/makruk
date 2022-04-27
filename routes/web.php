@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\HomeController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Frontend
 Route::get('/', function () {
     return view('frontend.index');
 });
@@ -30,4 +33,11 @@ Route::get('/homeLevel', function () {
 Route::get('/dashboard/{page}', function ($page) {
     $path = 'frontend.dashboard' . $page;
     return view($path);
+});
+
+
+// Backend
+Auth::routes();
+Route::get('/admin', function () {
+    return view('backend.index');
 });
