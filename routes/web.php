@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AdminController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,3 +33,12 @@ Route::get('/dashboard/{page}', function ($page) {
     $path = 'frontend.dashboard' . $page;
     return view($path);
 });
+
+// Auth::routes();
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::group(['prefix' => 'admin'], function () {
+    Auth::routes();
+});
+Route::get('/admin', [AdminController::class, 'index']);
