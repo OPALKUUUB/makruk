@@ -1,0 +1,3271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Prompt:wght@200;300;400&display=swap');
+
+:root {
+  --whites: #fff;
+  --blacks: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', 'Prompt', sans-serif !important;
+}
+
+
+.container-sm {
+  max-width: 1000px !important;
+}
+
+.container-lg {
+  max-width: 1460px !important;
+}
+
+/* -----------------------
+      navbar
+----------------------- */
+
+.navbar {
+  padding: 0 !important;
+}
+
+.bg-navbar {
+  background-color: #271A0F;
+  width: 100%;
+}
+
+.logo img {
+  width: 50%;
+}
+
+.logo2 img {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.btn-login {
+  width: 150px;
+  height: 40px;
+  padding: 0.5rem;
+  background-color: #FBF7F1;
+  border-radius: 3px;
+  text-align: center;
+  float: left;
+  margin: 1.5rem 1rem;
+}
+
+.btn-right a {
+  color: #271A0F !important;
+  text-decoration: none !important;
+}
+
+.btn-login:hover {
+  background-color: #fae2c1;
+}
+
+.btn-right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
+.btn-user {
+  padding: 0.5rem 2rem;
+  background-color: #271A0F;
+  border: none;
+  color: #FBF4EA;
+  font-size: 18px;
+  margin: 1rem 0;
+}
+
+.btn-score {
+  padding: 0.5rem 2rem;
+  background-color: #271A0F;
+  border: none;
+  color: #FBF4EA;
+  font-size: 18px;
+  margin: 1rem 0;
+}
+
+.btn-score span {
+  background-color: #FBF4EA;
+  padding: 0 1rem;
+  color: #271A0F;
+  border-radius: 3px;
+}
+
+
+
+/* ------------------------------------
+      index
+------------------------------------ */
+
+.bg-first {
+  background-image: url('../img/bg-first.png');
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.bg-two {
+  background-image: url('../img/bg-two.png');
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.bg-tree {
+  background-image: url('../img/bg-tree.png');
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.detailFirst h1 {
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.detailFirst {
+  padding: 0;
+  text-align: center;
+}
+
+.detailFirst p {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.cardRank {
+  width: 70%;
+  background-color: #FBF4EA;
+  border-radius: 3px;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+}
+
+.cardRank i {
+  font-size: 40px;
+}
+
+.img-rank {
+  width: 70%;
+  display: block;
+  margin: auto;
+}
+
+.textRank {
+  text-align: center;
+  font-size: 18px;
+  padding: 0.5rem 0;
+  color: #fff;
+  background-color: #271A0F;
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+  border-radius: 0 0 5px 5px;
+}
+
+.textRank span {
+  font-size: 14px;
+}
+
+.textRank p {
+  margin-bottom: 0;
+}
+
+.rank {
+  display: block;
+  margin: auto;
+}
+
+.cardrules {
+  width: 100%;
+  background-color: #271A0F;
+  opacity: .5;
+  color: #fff;
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 2rem 2rem;
+}
+
+.cardrules h4 {
+  text-align: center;
+}
+
+.table.cardTable>thead {
+  background-color: #271A0F;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  height: 50px;
+}
+
+.table.cardTable>tbody {
+  background-color: #FBF4EA;
+  color: #271A0F;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tableRank {
+  width: 300px;
+  position: relative;
+  top: -75%;
+  left: 5%;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.one-medal {
+  color: #F1962E;
+}
+
+.two-medal {
+  color: #99AEBA;
+}
+
+.tree-medal {
+  color: #9A4110;
+}
+
+.four-medal {
+  color: #74DE25;
+}
+
+.five-medal {
+  color: #16E1EE;
+}
+
+.hover-effect .icon {
+  --transition-duration: 500ms;
+  --transition-easing: ease-out;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--foreground-color);
+  transition: transform var(--transition-duration) var(--transition-easing);
+  overflow: hidden;
+}
+
+.hover-effect .icon::before {
+  content: "";
+  background: rgba(255, 255, 255, 0.4);
+  width: 60%;
+  height: 100%;
+  top: 0%;
+  left: -125%;
+  transform: skew(45deg);
+  position: absolute;
+  transition: left var(--transition-duration) var(--transition-easing);
+}
+
+.hover-effect .icon:hover {
+  transform: translateY(-5%) !important;
+}
+
+.hover-effect .icon:hover::before {
+  left: 150%;
+}
+
+.peopleOnline p {
+  width: 70px;
+  background-color: #ddd;
+  text-align: center;
+  opacity: 0.7;
+  margin: 0.5rem;
+  position: relative;
+  z-index: 10;
+}
+
+.peopleOnline i {
+  font-size: 10px;
+}
+
+.green {
+  color: #19cf08;
+}
+
+/* --------------------------------------
+  login/register
+-------------------------------------- */
+
+.cardForm {
+  width: 900px;
+  height: 541px;
+  background-color: #fff;
+  margin: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  border: 3px solid #271A0F;
+}
+
+.logoForm img {
+  width: 100%;
+  margin: 1rem 0.25rem;
+}
+
+.rule img {
+  width: 100%;
+  height: 538px;
+}
+
+.formLogin {
+  padding: 1rem 3rem;
+}
+
+.formLogin h5 {
+  text-align: center;
+}
+
+.btn-brown {
+  background-color: #271A0F;
+  width: 150px;
+  color: #fff;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  margin: 0.5rem auto;
+}
+
+.btn-brown:hover {
+  background-color: #47301c;
+}
+
+.forgot a {
+  text-decoration: underline;
+  color: #271A0F;
+}
+
+/* ----------------------------
+  footer
+---------------------------- */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* ----------------------------------
+  homeLevel
+---------------------------------- */
+
+.boardLevel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: pointer;
+  padding: 1.5rem 0;
+}
+
+.boxLevel {
+  background-color: #fff;
+  width: 400px;
+  height: 350px;
+  border-radius: 5px;
+  margin: 1rem;
+  color: #fff;
+}
+
+.boxLevel:hover {
+  background-color: #fdf4e8;
+
+}
+
+.boxLevel img {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+.boxLevel p {
+  width: 90px;
+  padding: 0.5rem 1rem;
+  position: relative;
+  top: -20px;
+  left: 20px;
+  margin: 0;
+}
+
+.bg-box1 {
+  background-color: #4A1405;
+}
+
+.bg-box2 {
+  background-color: #8F4D94;
+}
+
+.bg-box3 {
+  background-color: #244E74;
+}
+
+.bg-box4 {
+  background-color: #C5323C;
+}
+
+.bg-box5 {
+  background-color: #4E98B8;
+}
+
+/* ---------------------------
+  dashboard
+--------------------------- */
+
+.btn-game button {
+  border: none;
+  background-color: #956843;
+  color: #FBFBFB;
+  width: 200px;
+  height: 40px;
+  margin: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px 0 rgb(0, 0, 0, 0.5);
+}
+
+.btn-game button:hover {
+  background-color: #7a5435;
+}
+
+.gameRoom table {
+  width: 100%;
+  height: 570px;
+  background-color: #FCF2E2;
+}
+
+.gameRoom {
+  margin-bottom: 0.5rem;
+}
+
+.gameRoom tbody,
+.gameRoom td,
+.gameRoom tfoot,
+.gameRoom th,
+.gameRoom thead,
+.gameRoom tr {
+  width: 200px;
+  height: 40px;
+  padding: 0.5rem;
+  color: #3C3934;
+}
+
+.gameRoom tbody>tr {
+  box-shadow: 0 1px 1px 0 rgb(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.gameRoom tbody>tr:hover {
+  background-color: #cc7524;
+}
+
+.gameRoom thead>tr {
+  box-shadow: 0 2px 2px 0 rgb(0, 0, 0, 0.1);
+}
+
+.scrollbar {
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.gameRoom th {
+  color: #6e6d6d;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.gameRoom span {
+  color: #3C3934;
+  font-weight: 400;
+  font-family: "Prompt";
+}
+
+.scrollRank {
+  height: 245px;
+  overflow-y: scroll;
+}
+
+.rankBox {
+  width: 340px;
+  margin-bottom: 0.5rem;
+}
+
+.rankBox table {
+  width: 100%;
+  height: 250px;
+  background-color: #FCF2E2;
+}
+
+.rankBox tbody,
+.rankBox td,
+.rankBox tfoot,
+.rankBox th,
+.rankBox thead,
+.rankBox tr {
+  width: 200px;
+  height: 40px;
+  font-size: 14px;
+  padding: 0.5rem;
+  color: #3C3934;
+
+}
+
+.rankBox tbody>tr {
+  box-shadow: 0 1px 1px 0 rgb(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.rankBox tbody>tr:hover {
+  background-color: #cfcfcf;
+}
+
+.rankBox thead>tr {
+  box-shadow: 0 2px 2px 0 rgb(0, 0, 0, 0.1);
+}
+
+.scrollbar {
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.rankBox th {
+  color: #6e6d6d;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.rankBox span {
+  color: #3C3934;
+  font-weight: 400;
+  font-family: "Prompt";
+}
+
+#score {
+  text-align: right;
+}
+
+.form-game {
+  width: 200px;
+  padding: 0.5rem;
+  border-radius: 3px;
+  color: #271A0F;
+  background-color: #F2F2F2;
+  border: none;
+}
+
+.modal-content {
+  width: 60% !important;
+  margin: auto;
+  border: 3px solid #271A0F !important;
+}
+
+.modal-header .btn-close {
+  margin: 0 !important;
+}
+
+.modal-title {
+  margin: auto;
+  color: #271A0F;
+}
+
+.modal-footer {
+  justify-content: center !important;
+}
+
+.btn-newgame {
+  background-color: #271A0F !important;
+  color: #FBFBFB !important;
+}
+
+/* -------------------------
+  game 
+------------------------- */
+
+.opponent {
+  background-color: #FBF4EA;
+  width: 100%;
+  height: 100px;
+  border-radius: 3px;
+  margin: 0 !important;
+  margin-top: 0.25rem !important;
+}
+
+.opponent img {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.myself {
+  background-color: #FBF4EA;
+  width: 100%;
+  height: 100px;
+  border-radius: 3px;
+  margin: 0 !important;
+  margin-top: 0.25rem !important;
+}
+
+.myself img {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.gameDetail {
+  color: #271A0F;
+  padding: 0.75rem 0;
+}
+
+.gameDetail p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.gameDetail span {
+  font-size: 12px;
+}
+
+.gameTime {
+  background-color: #956843;
+  width: 100%;
+  color: #FBF4EA;
+  font-size: 2rem;
+  padding-top: 1.5rem;
+}
+
+.timeGame {
+  background-color: #FBF4EA;
+  color: #271A0F;
+  text-align: center;
+  font-size: 26px;
+  margin: 2rem 0;
+}
+
+/* 
+-----------------
+chessBoard
+----------------- */
+
+.source a {
+  text-decoration: none;
+}
+
+.info {
+  background: white none repeat scroll 0 0;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  font-family: roboto;
+  font-size: 14px;
+  padding: 10px;
+  width: 40%;
+  border-radius: 2px;
+  position: relative;
+  line-height: 18px;
+  margin-top: 10px;
+}
+
+.info::after {
+  background: transparent none repeat scroll 0 0;
+  border-color: transparent transparent white;
+  border-style: solid;
+  border-width: 10px;
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: -20px;
+  left: calc(50% - 10px);
+  width: 0;
+}
+
+@media (max-width: 600px) {
+
+  .info,
+  .source {
+    display: none;
+  }
+
+  .chess-board {
+    transform: scale(1.2);
+  }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.chess-board {
+  display: table;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  background: white;
+  margin: auto;
+  width: 100%;
+}
+
+.row-1>div,
+.row-2>div,
+.row-3>div,
+.row-4>div,
+.row-5>div,
+.row-6>div,
+.row-7>div,
+.row-8>div {
+  width: 5vw;
+  height: 5vw;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  empty-cells: show;
+  background-color: #F6DCA0;
+  border: 1px solid #A8976B;
+}
+
+.chess-board div[class^=row] img {
+  position: relative;
+}
+
+@media (max-width: 600px) {
+
+  .row-1>div,
+  .row-2>div,
+  .row-3>div,
+  .row-4>div,
+  .row-5>div,
+  .row-6>div,
+  .row-7>div,
+  .row-8>div {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .chess-board div[class^=row] img {
+    width: 8vw;
+    height: 8vw;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 991px) {
+
+  .row-1>div,
+  .row-2>div,
+  .row-3>div,
+  .row-4>div,
+  .row-5>div,
+  .row-6>div,
+  .row-7>div,
+  .row-8>div {
+    width: 12vw;
+    height: 12vw;
+  }
+
+  .chess-board div[class^=row] img {
+    width: 10vw;
+    height: 10vw;
+  }
+}
+
+.row-1,
+.row-2,
+.row-3,
+.row-4,
+.row-5,
+.row-6,
+.row-7,
+.row-8 {
+  display: table-row;
+}
+
+.chess-board div[class^=row]:nth-of-type(even)>div:nth-of-type(odd) {
+  background-color: #F6DCA0;
+  color: #fff;
+}
+
+.chess-board div[class^=row]:nth-of-type(odd)>div:nth-of-type(even) {
+  background-color: #F6DCA0;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .chess-board div[class^=row] img {
+    width: 5vw;
+    height: 5vw;
+  }
+}
+
+/* Move upwards */
+
+@keyframes move-up-1 {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-5vw);
+  }
+}
+
+@keyframes move-up-2 {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10vw);
+  }
+}
+
+@keyframes move-up-3 {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-15vw);
+  }
+}
+
+@keyframes move-up-4 {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-20vw);
+  }
+}
+
+@keyframes move-up-5 {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-25vw);
+  }
+}
+
+@keyframes move-up-6 {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-30vw);
+  }
+}
+
+@keyframes move-up-7 {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-35vw);
+  }
+}
+
+/* Move downwards */
+
+@keyframes move-down-1 {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(5vw);
+  }
+}
+
+@keyframes move-down-2 {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(10vw);
+  }
+}
+
+@keyframes move-down-3 {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(15vw);
+  }
+}
+
+@keyframes move-down-4 {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(20vw);
+  }
+}
+
+@keyframes move-down-5 {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(25vw);
+  }
+}
+
+@keyframes move-down-6 {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(30vw);
+  }
+}
+
+@keyframes move-down-7 {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(35vw);
+  }
+}
+
+/* Move Left */
+
+@keyframes move-left-1 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translateX(-5vw);
+  }
+}
+
+@keyframes move-left-2 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translateX(-10vw);
+  }
+}
+
+@keyframes move-left-3 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translateX(-15vw);
+  }
+}
+
+@keyframes move-left-4 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translateX(-20vw);
+  }
+}
+
+@keyframes move-left-5 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translateX(-25vw);
+  }
+}
+
+@keyframes move-left-6 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translateX(-30vw);
+  }
+}
+
+@keyframes move-left-7 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translateX(-35vw);
+  }
+}
+
+/* Move Right */
+
+@keyframes move-right-1 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translateX(5vw);
+  }
+}
+
+@keyframes move-right-2 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translateX(10vw);
+  }
+}
+
+@keyframes move-right-3 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translateX(15vw);
+  }
+}
+
+@keyframes move-right-4 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translateX(20vw);
+  }
+}
+
+@keyframes move-right-5 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translateX(25vw);
+  }
+}
+
+@keyframes move-right-6 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translateX(30vw);
+  }
+}
+
+@keyframes move-right-7 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translateX(35vw);
+  }
+}
+
+@keyframes move-left-up-1 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-5vw, -5vw);
+  }
+}
+
+@keyframes move-left-up-2 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-10vw, -10vw);
+  }
+}
+
+@keyframes move-left-up-3 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-15vw, -15vw);
+  }
+}
+
+@keyframes move-left-up-4 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-20vw, -20vw);
+  }
+}
+
+@keyframes move-left-up-5 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-25vw, -25vw);
+  }
+}
+
+@keyframes move-left-up-6 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-30vw, -30vw);
+  }
+}
+
+@keyframes move-left-up-7 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-35vw, -35vw);
+  }
+}
+
+@keyframes move-right-up-1 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(5vw, -5vw);
+  }
+}
+
+@keyframes move-right-up-2 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(10vw, -10vw);
+  }
+}
+
+@keyframes move-right-up-3 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(15vw, -15vw);
+  }
+}
+
+@keyframes move-right-up-4 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(20vw, -20vw);
+  }
+}
+
+@keyframes move-right-up-5 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(25vw, -25vw);
+  }
+}
+
+@keyframes move-right-up-6 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(30vw, -30vw);
+  }
+}
+
+@keyframes move-right-up-7 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(35vw, -35vw);
+  }
+}
+
+@keyframes move-right-down-1 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(5vw, 5vw);
+  }
+}
+
+@keyframes move-right-down-2 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(10vw, 10vw);
+  }
+}
+
+@keyframes move-right-down-3 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(15vw, 15vw);
+  }
+}
+
+@keyframes move-right-down-4 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(20vw, 20vw);
+  }
+}
+
+@keyframes move-right-down-5 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(25vw, 25vw);
+  }
+}
+
+@keyframes move-right-down-6 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(30vw, 30vw);
+  }
+}
+
+@keyframes move-right-down-7 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(35vw, 35vw);
+  }
+}
+
+@keyframes move-left-down-1 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-5vw, 5vw);
+  }
+}
+
+@keyframes move-left-down-2 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-10vw, 10vw);
+  }
+}
+
+@keyframes move-left-down-3 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-15vw, 15vw);
+  }
+}
+
+@keyframes move-left-down-4 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-20vw, 20vw);
+  }
+}
+
+@keyframes move-left-down-5 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-25vw, 25vw);
+  }
+}
+
+@keyframes move-left-down-6 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-30vw, 30vw);
+  }
+}
+
+@keyframes move-left-down-7 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-35vw, 35vw);
+  }
+}
+
+/* Knight movements */
+
+@keyframes move-up-left-short {
+  0% {
+    transform: translate(0);
+  }
+
+  33% {
+    transform: translate(0, -5vw);
+  }
+
+  100% {
+    transform: translate(-10vw, -5vw);
+  }
+}
+
+@keyframes move-up-left-long {
+  0% {
+    transform: translate(0);
+  }
+
+  50% {
+    transform: translate(0, -10vw);
+  }
+
+  100% {
+    transform: translate(-5vw, -10vw);
+  }
+}
+
+@keyframes move-up-right-short {
+  0% {
+    transform: translate(0);
+  }
+
+  33% {
+    transform: translate(0, -5vw);
+  }
+
+  100% {
+    transform: translate(10vw, -5vw);
+  }
+}
+
+@keyframes move-up-right-long {
+  0% {
+    transform: translate(0);
+  }
+
+  50% {
+    transform: translate(0, -10vw);
+  }
+
+  100% {
+    transform: translate(5vw, -10vw);
+  }
+}
+
+@keyframes move-down-left-short {
+  0% {
+    transform: translate(0);
+  }
+
+  33% {
+    transform: translate(0, 5vw);
+  }
+
+  100% {
+    transform: translate(-10vw, 5vw);
+  }
+}
+
+@keyframes move-down-left-long {
+  0% {
+    transform: translate(0);
+  }
+
+  50% {
+    transform: translate(0, 10vw);
+  }
+
+  100% {
+    transform: translate(-5vw, 10vw);
+  }
+}
+
+@keyframes move-down-right-short {
+  0% {
+    transform: translate(0);
+  }
+
+  33% {
+    transform: translate(0, 5vw);
+  }
+
+  100% {
+    transform: translate(10vw, 5vw);
+  }
+}
+
+@keyframes move-down-right-long {
+  0% {
+    transform: translate(0);
+  }
+
+  50% {
+    transform: translate(0, 10vw);
+  }
+
+  100% {
+    transform: translate(5vw, 10vw);
+  }
+}
+
+/* Miscellaneous classes */
+
+@keyframes remove-piece {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes promoted-piece {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hidden-piece {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes attacked-square {
+  0% {
+    background-color: transparent;
+  }
+
+  20% {
+    background-color: tomato;
+  }
+
+  40% {
+    background-color: transparent;
+  }
+
+  60% {
+    background-color: tomato;
+  }
+
+  80% {
+    background-color: transparent;
+  }
+
+  100% {
+    background-color: tomato;
+  }
+}
+
+@keyframes highlight-square {
+  0% {
+    border: 5px solid gold;
+  }
+
+  100% {
+    border: 5px solid gold;
+  }
+}
+
+@keyframes winner {
+  0% {
+    background: transparent;
+    box-shadow: none;
+  }
+
+  100% {
+    background: #A7DA46;
+    box-shadow: 0 0 5px 0 gray;
+  }
+}
+
+@keyframes defeated {
+  0% {
+    background: transparent;
+    box-shadow: none;
+  }
+
+  100% {
+    background: #F35E3E;
+    box-shadow: 0 0 5px 0 gray;
+  }
+}
+
+
+.c4,
+.d5,
+.e6 {
+  border: 0px solid gold;
+}
+
+.h5,
+.g6 {
+  border: 0px solid gold;
+}
+
+.chessBackground {
+  background-image: url("../img/natural.jpg");
+  padding: 1rem;
+  position: relative;
+  top: -25px;
+}
+
+.board {
+  width: 100%;
+  height: 80vh;
+  margin-top: 0.5rem;
+  background-color: #F6DCA0;
+}
+
+.boxSetting {
+  position: absolute;
+  right: 10px;
+  top: 15%;
+  background-color: #FBF4EA;
+  width: 280px;
+  border-radius: 5px;
+  color: #271A0F;
+  padding: 1rem 0.5rem;
+}
+
+.boxSetting h3 {
+  float: left;
+}
+
+.boxSetting p {
+  text-align: right;
+  font-size: 22px;
+}
+
+.btn-setting button {
+  width: 110px;
+  background-color: #271A0F;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+}
+
+.btn-setting button:hover {
+  background-color: #47301c;
+}
+
+.btn-setting {
+  text-align: center;
+}
+
+.setting select {
+  width: 150px;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #3C3934;
+  margin: 1rem 0;
+}
+
+/* --------------------------
+  popup chat 
+-------------------------- */
+
+.chat .open-button {
+  background-color: #956843;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat .chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.chat .form-container {
+  max-width: 270px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.chat .form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.chat .form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.chat .form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.chat .form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.chat .form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+
+.w3-button {
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-bottom: 2px solid brown;
+}
+
+.w3-container {
+  height: 350px;
+}
+
+#move p {
+  text-align: center;
+  width: 250px;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+@media screen and (min-width:320px) and (max-width:374px) {
+  .logo img {
+    width: 100%;
+  }
+
+  .btn-user,
+  .btn-score {
+    padding: 0.5rem;
+    font-size: 14px;
+    margin: 0.5rem;
+  }
+
+  .btn-right {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  .detailFirst h1 {
+    font-size: 28px;
+  }
+
+  .detailFirst p {
+    font-size: 22px;
+  }
+
+  .bg-first {
+    height: auto;
+  }
+
+  .cardForm {
+    width: 80%;
+  }
+
+  .btn-login {
+    margin: 1rem 0.5rem;
+  }
+
+  .formLogin {
+    padding: 1rem 0.5rem;
+  }
+
+  .logoForm img {
+    width: 90%;
+  }
+
+  .formLogin h5 {
+    font-size: 16px;
+  }
+
+  .formLogin label {
+    font-size: 14px;
+  }
+
+  .forgot {
+    font-size: 14px;
+  }
+
+  .rule img {
+    display: none;
+  }
+
+  .btn-brown {
+    width: 110px;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .hover-effect .icon::before {
+    display: none;
+  }
+
+  .cardrules {
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+
+  .tableRank {
+    position: static;
+    margin: auto;
+  }
+
+
+
+  .boxLevel {
+    height: auto;
+  }
+
+  .bg-tree {
+    height: auto;
+  }
+
+  .btn-game {
+    text-align: center;
+  }
+
+  .rankBox {
+    width: 100%;
+  }
+
+  .form-game {
+    width: 100%;
+  }
+
+  .modal-content {
+    width: 100% !important;
+  }
+
+  .boxSetting {
+    position: static;
+    margin: auto;
+    font-size: 14px;
+  }
+
+  .opponent,
+  .myself {
+    height: auto;
+  }
+
+  .myself img {
+    margin-bottom: 0.5rem;
+  }
+
+  .chess-board {
+    width: unset;
+  }
+
+  .board {
+    height: 10vh;
+  }
+
+  .chat .open-button {
+    right: 0;
+    width: 120px;
+  }
+
+}
+
+@media screen and (min-width:375px) and (max-width:413px) {
+  .logo img {
+    width: 100%;
+  }
+
+  .btn-user,
+  .btn-score {
+    padding: 0.5rem;
+    font-size: 14px;
+    margin: 0.5rem;
+  }
+
+  .btn-right {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  .detailFirst h1 {
+    font-size: 28px;
+  }
+
+  .detailFirst p {
+    font-size: 22px;
+  }
+
+  .bg-first {
+    height: auto;
+  }
+
+  .cardForm {
+    width: 80%;
+  }
+
+  .btn-login {
+    margin: 1rem 0.5rem;
+  }
+
+  .formLogin {
+    padding: 1rem 0.5rem;
+  }
+
+  .logoForm img {
+    width: 90%;
+  }
+
+  .formLogin h5 {
+    font-size: 16px;
+  }
+
+  .formLogin label {
+    font-size: 14px;
+  }
+
+  .forgot {
+    font-size: 14px;
+  }
+
+  .rule img {
+    display: none;
+  }
+
+  .btn-brown {
+    width: 110px;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .hover-effect .icon::before {
+    display: none;
+  }
+
+  .cardrules {
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+
+  .tableRank {
+    position: static;
+    margin: auto;
+  }
+
+  .boxLevel {
+    height: auto;
+  }
+
+  .bg-tree {
+    height: auto;
+  }
+
+  .btn-game {
+    text-align: center;
+  }
+
+  .rankBox {
+    width: 100%;
+  }
+
+  .form-game {
+    width: 100%;
+  }
+
+  .modal-content {
+    width: 100% !important;
+  }
+
+  .boxSetting {
+    position: static;
+    margin: auto;
+    font-size: 14px;
+  }
+
+  .opponent,
+  .myself {
+    height: auto;
+    width: 50%;
+    margin: auto !important;
+  }
+
+  .myself img {
+    margin-bottom: 0.5rem;
+  }
+
+  .chess-board {
+    width: unset;
+  }
+
+  .board {
+    height: 10vh;
+  }
+
+  .chat .open-button {
+    right: 0;
+    width: 120px;
+  }
+
+}
+
+@media screen and (min-width:414px) and (max-width:424px) {
+  .logo img {
+    width: 100%;
+  }
+
+  .btn-user,
+  .btn-score {
+    padding: 0.5rem;
+    font-size: 14px;
+    margin: 0.5rem;
+  }
+
+  .btn-right {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  .btn-login {
+    margin: 1rem 0.5rem;
+  }
+
+  .detailFirst h1 {
+    font-size: 34px;
+  }
+
+  .cardForm {
+    width: 80%;
+  }
+
+  .btn-login {
+    margin: 1rem 0.5rem;
+  }
+
+  .formLogin {
+    padding: 1rem 0.5rem;
+  }
+
+  .logoForm img {
+    width: 90%;
+  }
+
+  .formLogin h5 {
+    font-size: 16px;
+  }
+
+  .formLogin label {
+    font-size: 14px;
+  }
+
+  .forgot {
+    font-size: 14px;
+  }
+
+  .rule img {
+    display: none;
+  }
+
+  .btn-brown {
+    width: 110px;
+  }
+
+  .detailFirst p {
+    font-size: 22px;
+  }
+
+  .bg-first {
+    height: auto;
+  }
+
+
+  .btn-login {
+    margin: 1rem 0.5rem;
+  }
+
+  .formLogin {
+    padding: 1rem 0.5rem;
+  }
+
+  .logoForm img {
+    width: 90%;
+  }
+
+  .formLogin h5 {
+    font-size: 16px;
+  }
+
+  .formLogin label {
+    font-size: 14px;
+  }
+
+  .forgot {
+    font-size: 14px;
+  }
+
+  .rule img {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .hover-effect .icon::before {
+    display: none;
+  }
+
+  .cardrules {
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+
+  .tableRank {
+    position: static;
+    margin: auto;
+  }
+
+  .boxLevel {
+    height: auto;
+  }
+
+  .bg-tree {
+    height: auto;
+  }
+
+  .btn-game {
+    text-align: center;
+  }
+
+  .rankBox {
+    width: 100%;
+  }
+
+  .form-game {
+    width: 100%;
+  }
+
+  .modal-content {
+    width: 100% !important;
+  }
+
+  .boxSetting {
+    position: static;
+    margin: auto;
+    font-size: 14px;
+  }
+
+  .opponent,
+  .myself {
+    height: auto;
+    width: 50%;
+    margin: auto !important;
+  }
+
+  .myself img {
+    margin-bottom: 0.5rem;
+  }
+
+  .chess-board {
+    width: unset;
+  }
+
+  .board {
+    height: 10vh;
+  }
+
+  .chat .open-button {
+    right: 0;
+    width: 120px;
+  }
+}
+
+@media screen and (min-width:425px) and (max-width:767px) {
+  .logo img {
+    width: 80%;
+    margin: auto;
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .btn-user,
+  .btn-score {
+    padding: 0.5rem;
+    font-size: 14px;
+    margin: 0.5rem;
+  }
+
+  .btn-right {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  .detailFirst h1 {
+    font-size: 34px;
+  }
+
+  .detailFirst p {
+    font-size: 22px;
+  }
+
+  .bg-first {
+    height: auto;
+  }
+
+  .cardForm {
+    width: 80%;
+  }
+
+  .btn-login {
+    margin: 1rem 0.5rem;
+  }
+
+  .formLogin {
+    padding: 1rem 0.5rem;
+  }
+
+  .logoForm img {
+    width: 90%;
+  }
+
+  .formLogin h5 {
+    font-size: 16px;
+  }
+
+  .formLogin label {
+    font-size: 14px;
+  }
+
+  .forgot {
+    font-size: 14px;
+  }
+
+  .rule img {
+    display: none;
+  }
+
+  .btn-brown {
+    width: 135px;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .hover-effect .icon::before {
+    display: none;
+  }
+
+  .cardrules {
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+
+  .tableRank {
+    position: static;
+    margin: auto;
+  }
+
+  .boxLevel {
+    height: auto;
+    width: 220px;
+  }
+
+  .bg-tree {
+    height: auto;
+  }
+
+  .btn-game {
+    text-align: center;
+  }
+
+  .rankBox {
+    width: 100%;
+  }
+
+  .form-game {
+    width: 100%;
+  }
+
+  .modal-content {
+    width: 100% !important;
+  }
+
+  .boxSetting {
+    position: static;
+    margin: auto;
+    font-size: 14px;
+  }
+
+  .opponent,
+  .myself {
+    height: auto;
+    width: 80%;
+    margin: auto !important;
+  }
+
+  .myself img {
+    margin-bottom: 0.5rem;
+  }
+
+  .chess-board {
+    width: unset;
+  }
+
+  .board {
+    height: 10vh;
+  }
+
+  .chat .open-button {
+    right: 0;
+    width: 120px;
+  }
+
+  .gameTime {
+    text-align: center;
+  }
+
+  .gameDetail {
+    padding: 0.5rem 0;
+  }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .logo img {
+    width: 100%;
+  }
+
+  .btn-user,
+  .btn-score {
+    padding: 0.5rem;
+    font-size: 14px;
+    margin: 1rem;
+  }
+
+  .btn-right {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  .cardForm {
+    width: 80%;
+    height: 565px;
+  }
+
+  .btn-login {
+    margin: 1rem 0.5rem;
+  }
+
+  .formLogin {
+    padding: 1rem 0.5rem;
+  }
+
+  .logoForm img {
+    width: 90%;
+  }
+
+  .formLogin h5 {
+    font-size: 24px;
+  }
+
+  .formLogin label {
+    font-size: 18px;
+  }
+
+  .forgot {
+    font-size: 18px;
+  }
+
+  .rule img {
+    display: none;
+  }
+
+  .detailFirst h1 {
+    font-size: 34px;
+  }
+
+  .detailFirst p {
+    font-size: 22px;
+  }
+
+  .bg-first {
+    height: auto;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .hover-effect .icon::before {
+    display: none;
+  }
+
+  .cardrules {
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+
+  .tableRank {
+    position: static;
+    margin: auto;
+  }
+
+  .boxLevel {
+    height: auto;
+    width: 300px;
+  }
+
+  .bg-tree {
+    height: auto;
+  }
+
+  .btn-game {
+    text-align: center;
+  }
+
+  .rankBox {
+    width: 100%;
+  }
+
+  .form-game {
+    width: 100%;
+  }
+
+  .modal-content {
+    width: 100% !important;
+  }
+
+  .boxSetting {
+    position: static;
+    margin: auto;
+    font-size: 14px;
+  }
+
+  .opponent,
+  .myself {
+    height: auto;
+    margin: auto !important;
+  }
+
+  .myself img {
+    margin-bottom: 0.5rem;
+  }
+
+  .chess-board {
+    width: unset;
+  }
+
+  .board {
+    display: none;
+  }
+
+  .chat .open-button {
+    right: 0;
+    width: 120px;
+  }
+
+  .gameTime {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .gameDetail {
+    padding: 0.5rem 0;
+  }
+
+  .row-1>div,
+  .row-2>div,
+  .row-3>div,
+  .row-4>div,
+  .row-5>div,
+  .row-6>div,
+  .row-7>div,
+  .row-8>div {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .chess-board div[class^=row] img {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .chessBackground.col-lg-2 {
+    flex: 0 0 auto;
+    width: 0% !important;
+  }
+
+  .col-lg-8 {
+    flex: 0 0 auto;
+    width: 100% !important;
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1279px) {
+  .logo img {
+    width: 100%;
+  }
+
+  .btn-user,
+  .btn-score {
+    padding: 0.5rem;
+    font-size: 14px;
+    margin: 1rem;
+  }
+
+  .btn-right {
+    justify-content: flex-end;
+  }
+
+  .detailFirst h1 {
+    font-size: 34px;
+  }
+
+  .detailFirst p {
+    font-size: 22px;
+  }
+
+  .bg-first {
+    height: auto;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .hover-effect .icon::before {
+    display: none;
+  }
+
+  .cardrules {
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+
+  .tableRank {
+    position: static;
+    margin: auto;
+  }
+
+  .boxLevel {
+    height: auto;
+    width: 300px;
+  }
+
+  .bg-tree {
+    height: auto;
+  }
+
+  .btn-game {
+    text-align: center;
+  }
+
+  .rankBox {
+    width: 100%;
+  }
+
+  .form-game {
+    width: 100%;
+  }
+
+  .modal-content {
+    width: 100% !important;
+  }
+
+  .boxSetting {
+    position: static;
+    margin: auto;
+    font-size: 14px;
+  }
+
+  .opponent,
+  .myself {
+    height: auto;
+    margin: auto !important;
+  }
+
+  .myself img {
+    margin-bottom: 0.5rem;
+  }
+
+  .chess-board {
+    width: unset;
+  }
+
+  .board {
+    display: none;
+  }
+
+  .chat .open-button {
+    right: 0;
+    width: 120px;
+  }
+
+  .gameTime {
+    text-align: center;
+  }
+
+  .gameDetail {
+    padding: 0.5rem 0;
+  }
+
+  .gameTime {
+    font-size: 16px;
+  }
+
+  .gameDetail p {
+    font-size: 10px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .col-lg-8 {
+    flex: 0 0 auto;
+    width: 100% !important;
+  }
+
+  .row-1>div,
+  .row-2>div,
+  .row-3>div,
+  .row-4>div,
+  .row-5>div,
+  .row-6>div,
+  .row-7>div,
+  .row-8>div {
+    width: 8vw;
+    height: 8vw;
+  }
+
+  .chess-board div[class^=row] img {
+    width: 8vw;
+    height: 8vw;
+  }
+
+}
+
+@media screen and (min-width:1280px) and (max-width:1359px) {
+  .logo img {
+    width: 100%;
+  }
+
+  .btn-user,
+  .btn-score {
+    padding: 0.5rem;
+    font-size: 14px;
+    margin: 1rem;
+  }
+
+  .btn-right {
+    justify-content: flex-end;
+  }
+
+  .detailFirst h1 {
+    font-size: 34px;
+  }
+
+  .detailFirst p {
+    font-size: 22px;
+  }
+
+  .bg-first {
+    height: auto;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .hover-effect .icon::before {
+    display: none;
+  }
+
+  .cardrules {
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+
+  .tableRank {
+    position: static;
+    margin: auto;
+  }
+
+  .boxLevel {
+    height: auto;
+    width: 300px;
+  }
+
+  .bg-tree {
+    height: auto;
+  }
+
+  .btn-game {
+    text-align: center;
+  }
+
+  .rankBox {
+    width: 100%;
+  }
+
+  .form-game {
+    width: 100%;
+  }
+
+  .modal-content {
+    width: 100% !important;
+  }
+
+  .boxSetting {
+    position: absolute;
+    font-size: 14px;
+    width: 180px;
+  }
+
+  .opponent,
+  .myself {
+    height: auto;
+    margin: auto !important;
+  }
+
+  .myself img {
+    margin-bottom: 0.5rem;
+  }
+
+  .btn-setting button {
+    margin: 0.5rem;
+  }
+
+  .chess-board {
+    width: unset;
+  }
+
+  .board {
+    display: none;
+  }
+
+  .chat .open-button {
+    right: 0;
+    width: 120px;
+  }
+
+  .gameTime {
+    text-align: center;
+  }
+
+  .gameDetail {
+    padding: 0.5rem 0;
+  }
+
+  .gameTime {
+    font-size: 16px;
+  }
+
+  .gameDetail p {
+    font-size: 10px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .col-lg-8 {
+    flex: 0 0 auto;
+    width: 100% !important;
+  }
+
+  .row-1>div,
+  .row-2>div,
+  .row-3>div,
+  .row-4>div,
+  .row-5>div,
+  .row-6>div,
+  .row-7>div,
+  .row-8>div {
+    width: 8vw;
+    height: 8vw;
+  }
+
+  .chess-board div[class^=row] img {
+    width: 8vw;
+    height: 8vw;
+  }
+
+}
+
+@media screen and (min-width:1360px) and (max-width:1439px) {
+  .logo img {
+    width: 70%;
+  }
+
+  .btn-user,
+  .btn-score {
+    padding: 0.5rem;
+    font-size: 14px;
+    margin: 1rem;
+  }
+
+  .btn-right {
+    justify-content: flex-end;
+  }
+
+  .detailFirst h1 {
+    font-size: 34px;
+  }
+
+  .detailFirst p {
+    font-size: 22px;
+  }
+
+  .bg-first {
+    height: auto;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .hover-effect .icon::before {
+    display: none;
+  }
+
+  .cardrules {
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+
+  .tableRank {
+    position: static;
+    margin: auto;
+  }
+
+  .boxLevel {
+    height: auto;
+    width: 300px;
+  }
+
+
+  .btn-game {
+    text-align: center;
+  }
+
+  .rankBox {
+    width: 100%;
+  }
+
+  .form-game {
+    width: 100%;
+  }
+
+  .modal-content {
+    width: 100% !important;
+  }
+
+  .boxSetting {
+    position: absolute;
+    font-size: 14px;
+    width: 200px;
+  }
+
+  .btn-setting button {
+    margin: 0.5rem;
+  }
+
+  .opponent,
+  .myself {
+    height: auto;
+  }
+
+  .myself img {
+    margin-bottom: 0.5rem;
+  }
+
+  .chess-board {
+    width: unset;
+  }
+
+  .chat .open-button {
+    right: 0;
+    width: 120px;
+  }
+
+  .gameTime {
+    text-align: center;
+  }
+
+  .gameDetail {
+    padding: 0.5rem 0;
+  }
+
+  .gameTime {
+    font-size: 16px;
+  }
+
+  .gameDetail p {
+    font-size: 10px;
+  }
+
+  .row-1>div,
+  .row-2>div,
+  .row-3>div,
+  .row-4>div,
+  .row-5>div,
+  .row-6>div,
+  .row-7>div,
+  .row-8>div {
+    width: 6.5vw;
+    height: 6.5vw;
+  }
+
+  .chess-board div[class^=row] img {
+    width: 6.5vw;
+    height: 6.5vw;
+  }
+
+  .board {
+    height: 80vh;
+  }
+}
+
+@media screen and (min-width:1440px) and (max-width:1599px) {
+  .logo img {
+    width: 70%;
+  }
+
+  .btn-user,
+  .btn-score {
+    padding: 0.5rem;
+    font-size: 14px;
+    margin: 1rem;
+  }
+
+  .btn-right {
+    justify-content: flex-end;
+  }
+
+  .board {
+    height: 90vh;
+  }
+
+  .detailFirst h1 {
+    font-size: 34px;
+  }
+
+  .detailFirst p {
+    font-size: 22px;
+  }
+
+  .bg-first {
+    height: auto;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .hover-effect .icon::before {
+    display: none;
+  }
+
+  .cardrules {
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+
+  .tableRank {
+    position: static;
+    margin: auto;
+  }
+
+  .boxLevel {
+    height: auto;
+    width: 300px;
+  }
+
+  .bg-tree {
+    height: auto;
+  }
+
+  .btn-game {
+    text-align: center;
+  }
+
+  .rankBox {
+    width: 100%;
+  }
+
+  .form-game {
+    width: 100%;
+  }
+
+  .modal-content {
+    width: 100% !important;
+  }
+
+  .boxSetting {
+    position: absolute;
+    font-size: 14px;
+    width: 200px;
+  }
+
+  .btn-setting button {
+    margin: 0.5rem;
+  }
+
+  .opponent,
+  .myself {
+    height: auto;
+  }
+
+  .myself img {
+    margin-bottom: 0.5rem;
+  }
+
+  .chess-board {
+    width: unset;
+  }
+
+  .chat .open-button {
+    right: 0;
+    width: 120px;
+  }
+
+  .gameTime {
+    text-align: center;
+  }
+
+  .gameDetail {
+    padding: 0.5rem 0;
+  }
+
+  .gameTime {
+    font-size: 16px;
+  }
+
+  .gameDetail p {
+    font-size: 10px;
+  }
+
+  .row-1>div,
+  .row-2>div,
+  .row-3>div,
+  .row-4>div,
+  .row-5>div,
+  .row-6>div,
+  .row-7>div,
+  .row-8>div {
+    width: 6.5vw;
+    height: 6.5vw;
+  }
+
+  .chess-board div[class^=row] img {
+    width: 6.5vw;
+    height: 6.5vw;
+  }
+
+}
+
+@media screen and (min-width:1600px) and (max-width:1919px) {
+  .logo img {
+    width: 70%;
+  }
+
+  .btn-user,
+  .btn-score {
+    padding: 0.5rem;
+    font-size: 14px;
+    margin: 1rem;
+  }
+
+  .btn-right {
+    justify-content: flex-end;
+  }
+
+  .detailFirst h1 {
+    font-size: 34px;
+  }
+
+  .detailFirst p {
+    font-size: 22px;
+  }
+
+  .bg-first {
+    height: auto;
+  }
+
+  .footer {
+    z-index: 1;
+  }
+
+  .cardrules {
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+
+  .tableRank {
+    width: 280px;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    z-index: 2;
+  }
+
+  .boxLevel {
+    height: auto;
+    width: 300px;
+  }
+
+  .bg-tree {
+    height: auto;
+  }
+
+  .btn-game {
+    text-align: center;
+  }
+
+  .rankBox {
+    width: 100%;
+  }
+
+  .form-game {
+    width: 100%;
+  }
+
+  .modal-content {
+    width: 100% !important;
+  }
+
+  .chessBackground {
+    z-index: 2;
+  }
+
+  .board {
+    height: 90vh;
+  }
+
+  .boxSetting {
+    position: absolute;
+    font-size: 14px;
+    width: 200px;
+    z-index: 5;
+  }
+
+  .btn-setting button {
+    margin: 0.5rem;
+  }
+
+  .boardLevel {
+    padding: 3.5rem;
+  }
+
+  .opponent,
+  .myself {
+    height: auto;
+  }
+
+  .myself img {
+    margin-bottom: 0.5rem;
+  }
+
+  .chess-board {
+    width: unset;
+  }
+
+  .chat .open-button {
+    right: 0;
+    width: 120px;
+  }
+
+  .gameTime {
+    text-align: center;
+  }
+
+  .gameDetail {
+    padding: 0.5rem 0;
+  }
+
+  .gameTime {
+    font-size: 16px;
+  }
+
+  .gameDetail p {
+    font-size: 10px;
+  }
+
+  .row-1>div,
+  .row-2>div,
+  .row-3>div,
+  .row-4>div,
+  .row-5>div,
+  .row-6>div,
+  .row-7>div,
+  .row-8>div {
+    width: 6vw;
+    height: 6vw;
+  }
+
+  .chess-board div[class^=row] img {
+    width: 6vw;
+    height: 6vw;
+  }
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1400px !important;
+  }
+
+}
+
+@media screen and (min-width:1920px) and (max-width:2559px) {}
+
+@media screen and (min-width:2560px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1590px !important;
+  }
+
+  .detailFirst,
+  .boardLevel,
+  .dashboard {
+    margin: 5rem 0;
+  }
+
+  .chessBackground {
+    margin-top: 5rem;
+  }
+
+  .board {
+    width: 100%;
+    height: 65vh;
+  }
+
+  .opponent,
+  .myself {
+    height: auto;
+  }
+
+  .tableRank {
+    position: absolute;
+    top: 25%;
+  }
+}
