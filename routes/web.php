@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\SocialAuthFacebookController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,6 +23,9 @@ Route::post('user/checklogin', [FrontendController::class, 'checklogin']);
 Route::get('user/logout', [FrontendController::class, 'logout']);
 Route::get('/register', [FrontendController::class, 'register']);
 Route::post('user/checkregister', [FrontendController::class, 'checkregister']);
+Route::get('auth/facebook', [SocialAuthFacebookController::class, 'redirect']);
+Route::get('auth/facebook/callback', [SocialAuthFacebookController::class, 'callback']);
+
 
 Route::get('/home', function () {
     return view('frontend.homeLevel');

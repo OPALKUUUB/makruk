@@ -66,6 +66,8 @@
                                             class="btn-brown">สมัครสมาชิก</button></a>
                                 </div>
                                 <div class="col-lg-12">
+                                    {{-- https://developers.facebook.com/apps/1120414075414716/settings/basic/ --}}
+                                    <a href="{{ url('auth/facebook') }}">face</a>
                                     <button class="btn-brown w-100"><i class="fa fa-facebook-square"></i> Login with
                                         Facebook</button>
                                 </div>

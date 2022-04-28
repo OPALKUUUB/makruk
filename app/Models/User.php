@@ -9,10 +9,14 @@ class User extends Authenticatable
 {
 
     protected $fillable = [
-        'username', 'email', 'password'
+        'username', 'email', 'password', 'facebook_id'
     ];
 
     protected $hidden = [
-        'password', 'remember_token',
+        'password', 'remember_token', 'two_factor_recovery_codes',
+        'two_factor_secret',
+    ];
+    protected $appends = [
+        'profile_photo_url',
     ];
 }
