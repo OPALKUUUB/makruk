@@ -14,6 +14,13 @@
 
     {{-- <?php include 'stylesheet.php'; ?> --}}
     @include('frontend.stylesheet')
+    <style>
+        .error {
+            color: red;
+            font-size: 0.7rem;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -26,31 +33,43 @@
                             <div class="logoForm">
                                 <img src="{{ asset('assets/img/logo15.png') }}" />
                             </div>
-                            <div class="formLogin">
+                            <form class="formLogin" method="post" action="{{ url('user/checklogin') }}">
+                                {{ csrf_field() }}
                                 <h5>เข้าสู่ระบบ</h5>
                                 <div class="col-lg-12 my-2">
                                     <label>Username</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" name="username">
                                 </div>
+                                @error('username')
+                                    <div class="error">{{ $message }}</div>
+                                @enderror
                                 <div class="col-lg-12 my-2">
                                     <label>Password</label>
-                                    <input type="text" class="form-control">
+                                    <input type="password" class="form-control" name="password">
                                 </div>
+                                @error('password')
+                                    <div class="error">{{ $message }}</div>
+                                @enderror
                                 <div class="col-lg-12 my-2">
                                     <div class="forgot">
                                         <a href="#">Forgot Password?</a>
                                     </div>
-
                                 </div>
-                                <div class="col-lg-12 text-center mt-5">
-                                    <a href="homeLevel"><button class="btn-brown">เข้าสู่ระบบ</button></a>
-                                    <a href="register"><button class="btn-brown">สมัครสมาชิก</button></a>
+                                @if (Session::has('error'))
+                                    <span class="error">{{ Session::get('error') }}</span>
+                                @endif
+                                <div class="col-lg-12 text-center mt-3">
+                                    {{-- <a href="homeLevel"><button class="btn-brown">เข้าสู่ระบบ</button></a>
+                                    <a href="register"><button class="btn-brown">สมัครสมาชิก</button></a> --}}
+                                    <button type="submit" class="btn-brown">เข้าสู่ระบบ</button>
+                                    <a href="{{ url('/register') }}"><button
+                                            class="btn-brown">สมัครสมาชิก</button></a>
                                 </div>
                                 <div class="col-lg-12">
                                     <button class="btn-brown w-100"><i class="fa fa-facebook-square"></i> Login with
                                         Facebook</button>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                         <div class="col-lg-6">
                             <div class="rule">

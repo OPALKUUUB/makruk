@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FrontendController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,17 +14,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.index');
-});
+Route::get('/', [FrontendController::class, 'index']);
 
-Route::get('/login', function () {
-    return view('frontend.login');
-});
-Route::get('/register', function () {
-    return view('frontend.register');
-});
-Route::get('/homeLevel', function () {
+// User Login & Register
+Route::get('/login', [FrontendController::class, 'login']);
+Route::post('user/checklogin', [FrontendController::class, 'checklogin']);
+Route::get('user/logout', [FrontendController::class, 'logout']);
+Route::get('/register', [FrontendController::class, 'register']);
+Route::post('user/checkregister', [FrontendController::class, 'checkregister']);
+
+Route::get('/home', function () {
     return view('frontend.homeLevel');
 });
 

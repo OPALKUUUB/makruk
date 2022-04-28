@@ -14,6 +14,13 @@
 
     {{-- <?php include 'stylesheet.php'; ?> --}}
     @include('frontend.stylesheet')
+    <style>
+        .error {
+            color: red;
+            font-size: 0.7rem;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -26,29 +33,49 @@
                             <div class="logoForm">
                                 <img src="{{ asset('assets/img/logo15.png') }}">
                             </div>
-                            <div class="formLogin">
+                            <form class="formLogin" method="post" action="{{ url('user/checkregister') }}">
+                                {{ csrf_field() }}
                                 <h5>สมัครสมาชิก</h5>
+                                @if (Session::has('error'))
+                                    <span class="error">{{ Session::get('error') }}</span>
+                                @endif
                                 <div class="col-lg-12 my-2">
-                                    <label>Username</label>
-                                    <input type="text" class="form-control">
+                                    <label>Username @error('username')
+                                            <span class="error">{{ $message }}</span>
+                                        @enderror
+                                    </label>
+                                    <input type="text" class="form-control" name="username">
                                 </div>
+
                                 <div class="col-lg-12 my-2">
-                                    <label>Password</label>
-                                    <input type="text" class="form-control">
+                                    <label>Password @error('password')
+                                            <span class="error">{{ $message }}</span>
+                                        @enderror
+                                    </label>
+                                    <input type="password" class="form-control" name="password">
                                 </div>
+
                                 <div class="col-lg-12 my-2">
-                                    <label>Confirm Password</label>
-                                    <input type="text" class="form-control">
+                                    <label>Confirm Password @error('confirm_password')
+                                            <span class="error">{{ $message }}</span>
+                                        @enderror
+                                    </label>
+                                    <input type="password" class="form-control" name="confirm_password">
                                 </div>
+
                                 <div class="col-lg-12 my-2">
-                                    <label>Email</label>
-                                    <input type="text" class="form-control">
+                                    <label>Email @error('email')
+                                            <span class="error">{{ $message }}</span>
+                                        @enderror
+                                    </label>
+                                    <input type="email" class="form-control" name="email">
                                 </div>
 
                                 <div class="col-lg-12 mt-3 text-center">
-                                   <a href="#"><button class="btn-brown">สมัครสมาชิก</button></a>
+                                    {{-- <a href="#"><button class="btn-brown">สมัครสมาชิก</button></a> --}}
+                                    <button type="submit" class="btn-brown">สมัครสมาชิก</button>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                         <div class="col-lg-6">
                             <div class="rule">
